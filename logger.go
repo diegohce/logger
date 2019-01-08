@@ -14,7 +14,7 @@ type Logger struct {
 }
 
 // New creates a new Logger.
-// prefix will be printed at the begining of
+// prefix will be printed at the beginning of
 // every line.
 func New(prefix string) *Logger {
 
