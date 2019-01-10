@@ -36,7 +36,10 @@ func New(prefix string) *Logger {
 	if !debugMode {
 		devnull, _ := os.Open(os.DevNull)
 		l.debug.SetOutput(devnull)
+	} else {
+		l.Debug().Println("logger package DEBUG MODE: ON")
 	}
+
 	return l
 }
 
